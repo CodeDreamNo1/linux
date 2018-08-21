@@ -100,7 +100,6 @@ hkeys mainkey
 
 # redis 列表常用命令
 1. 开始(左侧)添加数据
-```
 lpush name val1 val2 val3
 ```
 2. 结尾(右侧)添加数据
@@ -214,7 +213,6 @@ type key
 flushall
 ```
 10. 选择库
-
 ```
 select num
 ```
@@ -260,11 +258,11 @@ sudo pip install redis
 
 4. 模板片断缓存
     ```
-    {% load cache %}
-    {% cache 500 hello %}
+    { % load cache % }
+    { % cache 500 hello % }
     hello1
     <!--hello2-->
-    {% endcache %}
+    { % endcache % }
     ```
 5. 调用原生方法
     ```
